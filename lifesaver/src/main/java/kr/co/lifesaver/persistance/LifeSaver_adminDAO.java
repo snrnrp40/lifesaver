@@ -89,6 +89,24 @@ public class LifeSaver_adminDAO implements DAO {
 		
 	}
 
+	@Override
+	public void insertMatching() {
+		session.insert("insertMaching");
+		
+	}
+
+	@Override
+	public void updateTry() {
+		session.update("updateTry");
+		
+	}
+
+	@Override
+	public void initSituation() {
+		session.insert("initSituationStat");
+		
+	}
+
 	
 	
 	

@@ -24,5 +24,8 @@ public interface DAO {
 	public List<LifeSaverHospitalLoc> selectHos(LifeSaverHospitalLoc dto);
 	public LifeSaverAdminLoginDTO chkAdminLogin(LifeSaverAdminLoginDTO dto);
 	public void insertMap(mapVO vo);
+	public void insertMatching();
+	public void updateTry();
+	public void initSituation();
 	
 }
