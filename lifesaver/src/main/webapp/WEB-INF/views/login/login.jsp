@@ -52,7 +52,7 @@ input {
 }
 
 #submitbutton {
-	background-image: url("../resources/img/login/login.png");
+	background-image: url("/resources/img/login/login.png");
 	background-position: center;
 }
 
@@ -212,21 +212,23 @@ function newLogin(){
 
 			<div id="menus">
 				
-				아이디 찾기 / 비밀번호 찾기 / <a href="./registerAgree">회원가입</a>
+				아이디 찾기 / 비밀번호 찾기 / <a href="<c:url value="/registerAgree" />">회원가입</a>
 				
 		
 				<br /><br />
 			
-			
+		
 		
 			
-			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://13.209.132.37/lifesaver/kakaologin&response_type=code&scope=account_email">
+			<a href="
+https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://13.209.132.37:8080/lifesaver/kakaologin&response_type=code&scope=account_email
+			">
 			<img src="<c:url value='/resources/img/login/kakao.png'/>" id="kakao" style="width: 88%;">
 			
 			</a>
 		
 
-					<br /><br />
+					<br /><br /> 
 			</div>
 </form>		
 

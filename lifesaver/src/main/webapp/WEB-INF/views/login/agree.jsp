@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -184,15 +186,16 @@ function changeImg2() {
 <body>
 
 
+
 <div id="container">
 
 	<div id="header">
-		<img src="../resources/img/agree/logo.png" alt="로고" id="logo" />	 <br />
+		<img src="<c:url value="/resources/img/agree/logo.png"/>" alt="로고" id="logo" />	 <br />
 		<span id="step">Step.1 약관동의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		Step.2 회원정보입력&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step.3 가입완료</span>
 		<br />
 		
-		<img src="../resources/img/agree/actionLine.png" alt="" />
+		<img src="<c:url value="/resources/img/agree/actionLine.png"/>" alt="" />
 		
 	</div>
 
@@ -210,29 +213,29 @@ function changeImg2() {
 			
 		<div id="checking">
 	
-		 
+		
 			<hr />
 				
 				<div id="agree1">
-				<img src="../resources/img/agree/off.png" alt="" onclick="changeImg()" id="on"/> 
+				<img src=" <c:url value="/resources/img/agree/off.png"/>" alt="" onclick="changeImg()" id="on"/> 
 				<span id="agreeall">전체동의</span>
 				
 				</div>
 			<hr />
 
 				<div id="agree2">
-				<img src="../resources/img/agree/off.png" alt="" onclick="changeImg2()" id="on2"/> 
+				<img src=" <c:url value="/resources/img/agree/off.png"/>" alt="" onclick="changeImg2()" id="on2"/> 
 				<span id="agreeall">이용약관 동의 (필수)</span>
-				
-				<img src="../resources/img/agree/agreebefore.png" alt="" id="agreebutton"/>
+				 
+				<img src="<c:url value="/resources/img/agree/agreebefore.png"/>" alt="" id="agreebutton"/>
 				
 				</div>
 				
 				<div id="agree3">
-				<img src="../resources/img/agree/checkedDefault.png" alt="" />
+				<img src="<c:url value="/resources/img/agree/checkedDefault.png"/>" alt="" />
 				<span id="agreeall">개인정보 수집 및 이용동의 (필수)</span> 
 				
-				<img src="../resources/img/agree/agreebefore.png" alt="" id="agreebutton"/>
+				<img src="<c:url value="/resources/img/agree/agreebefore.png"/>" alt="" id="agreebutton"/>
 				
 				</div>
 			
@@ -240,14 +243,17 @@ function changeImg2() {
 		<hr />
 		<div id="other">	
 			<span style="font-size:16px">기타 안내 사항</span>
-			<img src="../resources/img/agree/agreebefore.png" id="agreebutton" />
+			<img src="<c:url value="/resources/img/agree/agreebefore.png"/>" id="agreebutton1" />
 			<br />
 			<span style="font-size:12px">위의 개인정보 수집/이용에 대한 동의를 거부할 권리가 있습니다.</span>
 		</div>	
-		
+	
 		<div id="button">
-			<a href="./main"><img src="../resources/img/agree/beforeBtnDefault.png" id="beforebutton" /></a>
-			<a href="./registerSelect"><img src="../resources/img/agree/nextBtnClick.png" id="nextbutton" /></a>	
+		
+		
+			<a href="<c:url value="/main" />"><img src="	<c:url value="/resources/img/agree/beforeBtnDefault.png"/>" id="beforebutton2" /></a>
+				
+			<a href="<c:url value="/registerSelect" />"><img src="<c:url value="/resources/img/agree/nextBtnClick.png"/>" id="nextbutton" /></a>	
 		</div>
 		
 		
@@ -264,7 +270,7 @@ function changeImg2() {
 			
 		<div id="footer">
 				
-			<img src="../resources/img/login/logo2.png" id="logo2" />
+			<img src="<c:url value="/resources/img/login/logo2.png"/>" id="logo2" />
 			Copyright  LifeSaver Corp.  All Right Reserved.
 			
 			</div>
