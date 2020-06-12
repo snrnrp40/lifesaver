@@ -7,7 +7,7 @@ public class MatchingVO {
 	public MatchingVO() {
 		// TODO Auto-generated constructor stub
 	}
-
+	// 수정함
 	public MatchingVO(String saver_code, int ssb_situaion_num) {
 		super();
 		this.saver_code = saver_code;

@@ -14,6 +14,7 @@ import kr.co.lifesaver.domain.LifeSaver_Saver_Info;
 import kr.co.lifesaver.domain.LifeSaver_Situation_StatusDTO;
 import vo.mapVO;
 
+// 업데이트 됨
 @Repository
 public class LifeSaver_adminDAO implements DAO {
 	@Inject

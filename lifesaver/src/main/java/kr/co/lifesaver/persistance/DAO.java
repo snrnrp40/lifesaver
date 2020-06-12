@@ -10,7 +10,7 @@ import vo.mapVO;
 
 
 
-
+//다오
 public interface DAO {
 	public List<LifeSaver_Situation_StatusDTO> selectAllSS();
 	public List<LifeSaver_Situation_StatusDTO> selectSS(LifeSaver_Situation_StatusDTO dto);
