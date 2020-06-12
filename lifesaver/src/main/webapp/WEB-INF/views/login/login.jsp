@@ -220,7 +220,7 @@ function newLogin(){
 			
 		
 			
-			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://localhost:9090/kakaologin&response_type=code&scope=account_email">
+			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://13.209.132.37/lifesaver/kakaologin&response_type=code&scope=account_email">
 			<img src="<c:url value='/resources/img/login/kakao.png'/>" id="kakao" style="width: 88%;">
 			
 			</a>

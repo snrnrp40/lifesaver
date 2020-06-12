@@ -92,7 +92,7 @@ function kout(){
                     
                     <c:if test="${id eq null}">
                     
-                    <li><a href="/login">로그인</a></li>
+                    <li><a href="<c:url value="/login"/>">로그인</a></li>
                     
                     </c:if>
                     
@@ -104,7 +104,7 @@ function kout(){
                     </c:if>
                     
                     <li>
-                        <img src="../resources/img/sideBar.png" alt="">
+                        <img src="/resources/img/sideBar.png" alt=""> 
                     </li>
                     
                     <li><a href="/registerAgree">회원가입</a></li>

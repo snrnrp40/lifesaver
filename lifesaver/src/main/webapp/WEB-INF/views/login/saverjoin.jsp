@@ -210,7 +210,7 @@ $(document).ready(function(){
 			<div id="authtext">SNS 인증하기</div>
 			
 			<div id="auth">
-			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://localhost:9090/registerAuth&response_type=code&scope=account_email">
+			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://13.209.132.37/lifesaver/registerAuth&response_type=code&scope=account_email">
 				<img src="<c:url value="/resources/img/saverjoin/kakaoBtn.png" ></c:url>" alt="" /> 
 			</a>
 				<img src="<c:url value="/resources/img/saverjoin/googleBtn.png" ></c:url>" alt="" />
