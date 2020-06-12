@@ -43,8 +43,13 @@ public class RegisterController {
 	}
 	
 	@RequestMapping(value = "/registerSaver")
-	public String registerIndex() {
+	public String registerSaverIndex() {
 		return "login/saverjoin";
+	}
+	
+	@RequestMapping(value = "/registerLaw")
+	public String registerLawIndex() {
+		return "login/lawjoin";
 	}
 		
 	
@@ -66,7 +71,7 @@ public class RegisterController {
 	
 	
 	@RequestMapping(value = "/saverjoinOK") // 서블릿 주소(주소창에 입력)
-	public String registerLaw(HttpServletRequest req, HttpSession session) throws UnsupportedEncodingException {
+	public String registerSaver(HttpServletRequest req, HttpSession session) throws UnsupportedEncodingException {
 		
 		req.setCharacterEncoding("UTF-8");
 		
@@ -110,8 +115,39 @@ public class RegisterController {
 		
 			
 		return "main"; //jsp주소
+
+	}
+	
+	@RequestMapping(value = "/lawjoinOK")
+	public String registerLaw(HttpServletRequest req, HttpSession session) throws UnsupportedEncodingException {
 		
+		req.setCharacterEncoding("UTF-8");
 		
+		String law_license = req.getParameter("law_license");
+		String id = req.getParameter("id");
+		String pw = req.getParameter("pw");
+		String name = req.getParameter("name");
+		String birth = req.getParameter("year") + req.getParameter("month") + req.getParameter("day");
+		String gender = req.getParameter("checkgender");
+		String phone = req.getParameter("phone");
+		String address = req.getParameter("postnumber") + req.getParameter("postaddress");
+	
+	
+		
+		JoinVO voCom = new JoinVO(id, pw, name, birth, gender, phone, address);
+		dao.register(voCom);
+		
+		JoinVO voLaw = new JoinVO(law_license, 0);
+		voLaw.setCommon_id(id);
+		dao.insertSaver(voLaw);
+		
+		session.setAttribute("id", id);
+		session.setAttribute("name", name);
+		session.setAttribute("law_license", law_license);
+		
+			
+		return "main"; //jsp주소
+
 	}
 	
 	

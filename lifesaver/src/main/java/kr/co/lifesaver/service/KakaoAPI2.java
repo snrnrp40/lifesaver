@@ -37,7 +37,7 @@ public class KakaoAPI2 {
 			StringBuilder sb = new StringBuilder();
 			sb.append("grant_type=authorization_code");
 			sb.append("&client_id=5461997da2e1069ba99ac732d8c5018c");
-			sb.append("&redirect_uri=http://13.209.132.37:8080/lifesaver/registerSaver");
+			sb.append("&redirect_uri=http://13.209.132.37:8080/lifesaver/registerAuth");
 			sb.append("&code=" + authorize_code);
 			sb.append("&scope=account_email");
 			bw.write(sb.toString());

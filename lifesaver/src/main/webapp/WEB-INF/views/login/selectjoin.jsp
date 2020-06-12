@@ -104,11 +104,12 @@ html, body {
 
 
 
+
 		<div id="selectjoin">
 			<br /><br /><br /><br /><br /><br /><br /><br /><br />
 			<img src="<c:url value="/resources/img/selectjoin/law.png" ></c:url>" id="law" />
 			
-			<a href="./registerSaver">
+			<a href="<c:url value="/registerSaver"></c:url>">
 			<img src="<c:url value="/resources/img/selectjoin/saver.png" ></c:url>" id="saver" />
 			</a>
 			
