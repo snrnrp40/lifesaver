@@ -69,7 +69,7 @@ public class MainController {
 		
 		
 		
-		return "redirect:/main";
+		return "main";
 		
 	}
 	

@@ -65,13 +65,12 @@ public class JoinVO {
 	}
 
 	// Lawyer
-	public JoinVO(String law_code, String law_license, int law_auth) {
+	public JoinVO (String law_license, int law_auth) {
 		super();
-		this.law_code = law_code;
 		this.law_license = law_license;
 		this.law_auth = law_auth;
 	}
-
+ 
 	public void setCommon_id(String id) {
 		// TODO Auto-generated method stub
 		

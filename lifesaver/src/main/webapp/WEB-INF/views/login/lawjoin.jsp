@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 
-<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/saverjoin.css" ></c:url>">
+<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/lawjoin.css" ></c:url>">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
@@ -78,7 +78,7 @@ $(document).ready(function(){
 		
 	
 		    
-	    var saver_license = document.getElementById("saver_license");
+	    var law_license = document.getElementById("law_license");
 		var id = document.getElementById("id");
 	    var pw = document.getElementById("pw");
 	    var pwcheck = document.getElementById("pwcheck");
@@ -97,9 +97,9 @@ $(document).ready(function(){
 	$("#okbutton").on('click', function(){
 		
 		//라이센스 유효성 검사
-		if(saver_license.value==''){
+		if(law_license.value==''){
 			alert("자격번호를 입력해주세요!");
-			saver_license.focus();
+			law_license.focus();
 			return false;
 		}
 		
@@ -176,7 +176,7 @@ $(document).ready(function(){
 	    	return false;
 	    }
 
-	/* 	document.frm.action = './saverjoinOK';
+	/* 	document.frm.action = './lawjoinOK';
 		document.frm.method = "GET"; 
 		document.frm.submit(); */
 		alert("회원가입이 완료되었습니다.");
@@ -193,15 +193,15 @@ $(document).ready(function(){
 
 
 
-<form action="<c:url value="/saverjoinOK"/>" name="frm">
+<form action="<c:url value="/lawjoinOK"/>" name="frm">
 
 	<div id="container">
 
 		<div id="header">
-			<img src="<c:url value="/resources/img/saverjoin/logo.png" ></c:url>" alt="로고" id="logo" /> <br /> 
+			<img src="<c:url value="/resources/img/lawjoin/logo.png" ></c:url>" alt="로고" id="logo" /> <br /> 
 			<span id="step">Step.1 약관동의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				Step.2 회원정보입력&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				Step.3 가입완료</span> <br /> <img src="<c:url value="/resources/img/saverjoin/actionLine.png" ></c:url>" alt="" />
+				Step.3 가입완료</span> <br /> <img src="<c:url value="/resources/img/lawjoin/actionLine.png" ></c:url>" alt="" />
 				
 		</div>
 		
@@ -212,10 +212,10 @@ $(document).ready(function(){
 			<div id="authtext">SNS 인증하기</div>
 			
 			<div id="auth">
-			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://13.209.132.37:8080/lifesaver/registerAuth&response_type=code&scope=account_email">
-				<img src="<c:url value="/resources/img/saverjoin/kakaoBtn.png" ></c:url>" alt="" /> 
+			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://13.209.132.37:8080/lifelaw/registerAuth&response_type=code&scope=account_email">
+				<img src="<c:url value="/resources/img/lawjoin/kakaoBtn.png" ></c:url>" alt="" /> 
 			</a>
-				<img src="<c:url value="/resources/img/saverjoin/googleBtn.png" ></c:url>" alt="" />
+				<img src="<c:url value="/resources/img/lawjoin/googleBtn.png" ></c:url>" alt="" />
 			</div>
 			
 			<div id="insert">
@@ -224,7 +224,7 @@ $(document).ready(function(){
 				
 					<div id="license_name" class="names">면허번호 *</div>
 					<div id="license_text" class="texts">
-						<input type="text" name="saver_license" id="saver_license"/>
+						<input type="text" name="law_license" id="law_license"/>
 					</div>
 				</div>
 				
@@ -332,29 +332,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 				
-				
-				<div id="jobfield" class="fields" >
-					<div id="job_name" class="names">소속 기관</div>
-					<div id="job_text" class="texts">
-						<input type="text" name="jobaddr" id="jobaddr"/>
-					</div>
-					<div id="job_button" class="buttons">
-						<input type="button" value="기관 확인" onclick="openDaumPost2()"/>
-					</div>
-				</div>
-				
-				<div id="gradefield" class="fields" >
-					<div id="grade_name" class="names">세이버 분류</div>
-					<div id="grade_text" class="texts" style="width: 157px;">
-						<select id="saver_grade" name="saver_grade">
-							<option value="1">의사</option>
-							<option value="2">간호사, 응급구조사</option>
-							<option value="3">의료계 종사자</option>
-							<option value="4">자격증 소지자</option>
-						</select>
-					</div>
-				</div>
-				
+
 				<input type="submit" value="확인" id="okbutton" />
 				<input type="button" value="이전" />
 				
