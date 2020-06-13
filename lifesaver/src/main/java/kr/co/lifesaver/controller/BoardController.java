@@ -14,7 +14,7 @@ import kr.co.lifesaver.persistance.BoardDAO;
 @Controller
 public class BoardController {
 	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
-	
+
 	@Inject
 	BoardDAO dao;
 	
