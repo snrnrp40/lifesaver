@@ -25,26 +25,34 @@ $(document).ready(function() {
 	        maxHeight: null,
 	        focus: true, 
 	        lang : 'ko-KR'
+	        
 	  });
+	  $("p").each(function(){
+		    if (!$(this).text().trim().length) {
+		        $(this).remove();
+		    }
+		});
+	 
 	});
+
 </script>
 </head>
 <body>
 
 <div style="width: 80%;">
-	<form method="post" action="/write">
-		<select name="ctgory">
+	<form method="post" action="/writeform">
+		<select name="category">
 		    <option value="">카테고리</option>
-		    <option value="공지">공지</option>
-		    <option value="질문">질문</option>
-		    <option value="정보">정보</option>
-		    <option value="자유게시판">자유게시판</option>
-		    <option value="기타">기타</option>
+		    <option value="notice">공지</option>
+		    <option value="question">질문</option>
+		    <option value="infomation">정보</option>
+		    <option value="free">자유게시판</option>
+		    <option value="etc">기타</option>
 		</select>
 		<input type="text" name="writer" style="width: 20%;" placeholder="작성자"/><br>
 		<input type="text" name="title" style="width: 40%;" placeholder="제목"/>
 		<br><br> 
-		<textarea id="summernote" name="content" style="text-align: center;"></textarea>
+		<textarea id="summernote" name="content"></textarea>		
 		<input id="subBtn" type="reset" value="취소" style="float: right;" onclick="window.close()"/>
 		<input id="subBtn" type="button" value="글 작성" style="float: right;" onclick="goWrite(this.form)"/>
 	</form>

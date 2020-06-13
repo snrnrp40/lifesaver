@@ -18,12 +18,15 @@ public class BoardController {
 	@Inject
 	BoardDAO dao;
 	
+	
+	
 	@RequestMapping(value = "/writeform", method = RequestMethod.POST)
-	public String writeformIndex(LifeSaver_BoardDTO dto) {
-		logger.info("board/writeView");
+	public void writeformIndex(LifeSaver_BoardDTO dto) {
+		logger.info("writeform");
 		dao.insertBoard(dto);
 		
-		return "redirect:/board";
+	
+		
 	}
 	
 	

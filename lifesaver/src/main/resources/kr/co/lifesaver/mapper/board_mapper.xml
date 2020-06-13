@@ -6,7 +6,7 @@
   <mapper namespace=" ">
   	 <insert id="insertBoard" parameterType="boardDTO">
   		insert into board(category, writer, title, content)
-  		values(${category}, ${writer} , ${title} , ${content});
+  		values(#{category}, #{writer} , #{title} , #{content});
   	</insert> 
   
   </mapper>
