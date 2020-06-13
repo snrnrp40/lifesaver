@@ -83,10 +83,7 @@ public class MainController {
 	public String blogIndex() {
 		return "board/blog-single";
 	}
-	@RequestMapping(value = "/writeform", method = RequestMethod.GET)
-	public String writeformIndex() {
-		return "board/writeform";
-	}
+	
 	
 	
 	

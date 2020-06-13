@@ -18,7 +18,10 @@ public class BoardController {
 	@Inject
 	BoardDAO dao;
 	
-	
+	@RequestMapping(value = "/writeform", method = RequestMethod.GET)
+	public String writeformIndex() {
+		return "board/writeform";
+	}
 	
 	@RequestMapping(value = "/writeform", method = RequestMethod.POST)
 	public void writeformIndex(LifeSaver_BoardDTO dto) {
