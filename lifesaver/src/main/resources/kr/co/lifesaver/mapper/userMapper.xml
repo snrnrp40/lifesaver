@@ -51,8 +51,8 @@
 		saver_code, common_code, saver_license, saver_grade, saver_job, saver_job_addr
 		)
 		values(
-		(select concat('S', '-', (select lpad(common_code ,4,'0') from liferegister lr where common_id = '${common_id}' ))),
-		(select common_code from liferegister lr where common_id = '${common_id}'),
+		(select concat('S', '-', (select lpad(lr.common_code ,4,'0') from liferegister lr where common_id = '${lr.common_id}' ))),
+		(select lr.common_code from liferegister lr where common_id = '${lr.common_id}'),
 		${saver_license}, ${saver_grade}, ${saver_job}, ${saver_job_addr});
 	
 
