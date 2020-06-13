@@ -10,6 +10,7 @@
 		<typeAlias type="kr.co.lifesaver.domain.LifeSaver_Saver_Info" alias="SaverInfoDTO"/>
 		<typeAlias type="kr.co.lifesaver.domain.LifeSaverHospitalLoc" alias="hosLocDTO"/>
 		<typeAlias type="kr.co.lifesaver.domain.LifeSaverAdminLoginDTO" alias="adminLogDTO"/>
+		<typeAlias type="kr.co.lifesaver.domain.LifeSaverBoardDTO" alias="boardDTO"/>
 		<typeAlias type="vo.mapVO" alias="mapVO"/>
 	</typeAliases>
 </configuration>

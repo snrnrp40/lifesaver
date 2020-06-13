@@ -31,4 +31,10 @@ function myFunction3() {
 	    btnText.innerHTML = "Read less";
 	  }
 	}
+function categorybtn5(){
+    var url = "/writeform";
+    var name = "게시글작성";
+    var option = "width = 1200, height = 600"
+    window.open(url, name, option);
+}
 

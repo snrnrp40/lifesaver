@@ -1,5 +1,4 @@
 package kr.co.lifesaver.controller;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -75,13 +74,14 @@ public class MainController {
 	
 	@RequestMapping(value = "/board")
 	public String boardIndex() {
-		return "board";
+		return "board/board";
 	}
 	
 	@RequestMapping(value = "/blog")
 	public String blogIndex() {
-		return "blog-single";
+		return "board/blog-single";
 	}
+	
 	
 	
 	

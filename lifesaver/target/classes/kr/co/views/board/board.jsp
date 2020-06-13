@@ -79,13 +79,13 @@
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.jsp"><img src="../resources/img/biglogo.png" alt="" class="img-fluid"></a>
+              <a href="<c:url value="/blog"/>" ><img src="../resources/img/biglogo.png" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 
               </div>
-              <h3 class="card-title"><a href="blog-single.jsp">공지</a></h3>
+              <h3 class="card-title"><a href="<c:url value="/blog"/>" >공지</a></h3>
              	  <p>LifeSavor 6월 2일부터 정상 운영합니다
                          <span id="dots">...</span><br />
                          <span id="more">저희 LifeSaver가 6월 2일부터 정상 운영됩니다. <br />
@@ -104,7 +104,7 @@
                          
                   </p>
 					 <div class="read-more">
-						 <a href="blog-single.jsp" onclick="myFunction()" id="moreview">더보기..</a>
+						 <a href="<c:url value="/blog"/>"  onclick="myFunction()" id="moreview">더보기..</a>
                   		<a onclick="myFunction()" id="myBtn">Read More...</a>
                		 </div>
               
@@ -115,13 +115,13 @@
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.jsp"><img src="../resources/img/biglogo.png" alt="" class="img-fluid"></a>
+              <a href="<c:url value="/blog"/>" ><img src="../resources/img/biglogo.png" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 
               </div>
-              <h3 class="card-title"><a href="blog-single.jsp">CPR (심폐소생술) 강사</a></h3>
+              <h3 class="card-title"><ahref="<c:url value="/blog"/>" >CPR (심폐소생술) 강사</a></h3>
               <p>안녕하세요. 심폐소생술 강사에 관심를 갖고 있는 고1 여고생입니다. <br /> 
                          <span id="dots2">...</span><br />
                          <span id="more2">인터넷에 CPR강사 조건이나 연봉등을 검색해봐도 잘 나오지 않아서요..ㅜㅜ <br />
@@ -151,7 +151,7 @@
                          
                   </p>
 					 <div class="read-more">
-						 <a href="blog-single.jsp" onclick="myFunction2()" id="moreview2">더보기..</a>
+						 <a href="<c:url value="/blog"/>"  onclick="myFunction2()" id="moreview2">더보기..</a>
                   		<a onclick="myFunction2()" id="myBtn2">Read More...</a>
                		 </div>
             </div>
@@ -167,7 +167,7 @@
               <div class="card-category-box">
                 
               </div>
-              <h3 class="card-title"><a href="blog-single.jsp">cpr순서</a></h3>
+              <h3 class="card-title"><a href="<c:url value="/blog"/>" >cpr순서</a></h3>
                  <p>cpr순서에 대해 알려드립니다 <br />
                          <span id="dots3">...</span><br />
                          <span id="more3">1. 심정지 확인(반응 및 호흡 확인)하기
@@ -189,7 +189,7 @@
                          
                   </p>
 					 <div class="read-more">
-						 <a href="blog-single.jsp" onclick="myFunction3()" id="moreview3">더보기..</a>
+						 <a href="<c:url value="/blog"/>"  onclick="myFunction3()" id="moreview3">더보기..</a>
                   		<a onclick="myFunction3()" id="myBtn3">Read More...</a>
                		 </div>
             </div>
