@@ -10,7 +10,7 @@ import vo.mapVO;
 
 
 
-
+//다오
 public interface DAO {
 	public List<LifeSaver_Situation_StatusDTO> selectAllSS();
 	public List<LifeSaver_Situation_StatusDTO> selectSS(LifeSaver_Situation_StatusDTO dto);
@@ -24,5 +24,8 @@ public interface DAO {
 	public List<LifeSaverHospitalLoc> selectHos(LifeSaverHospitalLoc dto);
 	public LifeSaverAdminLoginDTO chkAdminLogin(LifeSaverAdminLoginDTO dto);
 	public void insertMap(mapVO vo);
+	public void insertMatching();
+	public void updateTry();
+	public void initSituation();
 	
 }

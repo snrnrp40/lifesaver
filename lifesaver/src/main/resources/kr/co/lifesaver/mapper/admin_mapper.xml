@@ -7,7 +7,7 @@
 	<select id="selectAllSS" resultType="SSdto">
 		select * from situation_status
 	</select>
-	
+	<!-- 수정함 -->
 	<select id="selectSSB" parameterType="SSdto" resultType="SSdto">
 		select * from situation_status
 		<trim prefix="where" >
@@ -108,5 +108,23 @@
 		(ssb_situation_num, ssb_situation_lat, ssb_situantion_lon, ssb_report_time)
 		values((select count(ssb_situation_num)+1 from synthesize_situation_board a) , '${ssb_situation_lat}', '${ssb_situation_lon}', '${ssb_report_time}')
 	</insert>
+	
+	<insert id="insertMaching" >
+		insert into matching
+		values( 'D1044' , (select max(ssb_situation_num) from synthesize_situation_board))
+	</insert>
+	
+	<update id="updateTry">
+		update saver_info
+		set saver_rev_try = saver_rev_try + 1 , saver_rev_succ = saver_rev_succ +1
+		where saver_code = 'd1044';
+	</update>
+	
+	<insert id="initSituationStat">
+		insert into situation_status
+		values ('d1044',(select max(ssb_situation_num) from synthesize_situation_board), '2020', 'resuscitation', 'resuscitation', 'resuscitation', 'resuscitation', '0', '0', '1'  )
+	
+	</insert>
+	
 	
 </mapper>

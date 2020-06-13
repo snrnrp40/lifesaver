@@ -14,6 +14,7 @@ import kr.co.lifesaver.domain.LifeSaver_Saver_Info;
 import kr.co.lifesaver.domain.LifeSaver_Situation_StatusDTO;
 import vo.mapVO;
 
+// 업데이트 됨
 @Repository
 public class LifeSaver_adminDAO implements DAO {
 	@Inject
@@ -86,6 +87,24 @@ public class LifeSaver_adminDAO implements DAO {
 	@Override
 	public void insertMap(mapVO vo) {
 		session.insert("insertMap", vo);
+		
+	}
+
+	@Override
+	public void insertMatching() {
+		session.insert("insertMaching");
+		
+	}
+
+	@Override
+	public void updateTry() {
+		session.update("updateTry");
+		
+	}
+
+	@Override
+	public void initSituation() {
+		session.insert("initSituationStat");
 		
 	}
 

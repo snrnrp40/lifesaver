@@ -12,5 +12,6 @@
 		<typeAlias type="kr.co.lifesaver.domain.LifeSaverAdminLoginDTO" alias="adminLogDTO"/>
 		<typeAlias type="kr.co.lifesaver.domain.LifeSaver_BoardDTO" alias="boardDTO"/>
 		<typeAlias type="vo.mapVO" alias="mapVO"/>
+		<typeAlias type="vo.MatchingVO" alias="matVO"/>
 	</typeAliases>
 </configuration>
