@@ -7,7 +7,7 @@
 	<select id="selectAllSS" resultType="SSdto">
 		select * from situation_status
 	</select>
-	
+	<!-- 수정함 -->
 	<select id="selectSSB" parameterType="SSdto" resultType="SSdto">
 		select * from situation_status
 		<trim prefix="where" >
