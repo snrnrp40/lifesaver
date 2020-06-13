@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
@@ -82,10 +83,7 @@ public class MainController {
 	public String blogIndex() {
 		return "board/blog-single";
 	}
-	@RequestMapping(value = "/writeform")
-	public String writeformIndex() {
-		return "board/writeform";
-	}
+	
 	
 	
 	
