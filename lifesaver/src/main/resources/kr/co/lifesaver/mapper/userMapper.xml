@@ -7,7 +7,7 @@
 
 	<!-- 회원 정보 조회 -->
 	<select id="selectOne" resultType="dto">
-		select * from register
+		select * from liferegister
 		where
 		common_id = #{common_id}
 		and
@@ -19,13 +19,13 @@
 	<insert id="register" parameterType="dto">
 	
 	
-		INSERT INTO register
+		INSERT INTO liferegister
 		(
 		common_code, common_id, common_pw, common_name, common_birth, common_gender, common_phone, common_addr
 		)
 		values
 		(
-		(select count(common_code)+1 from register r),
+		(select count(common_code)+1 from liferegister lr),
 		#{common_id}, #{common_pw}, #{common_name},
 		#{common_birth}, #{common_gender}, #{common_phone}, 
 		#{common_addr}
@@ -39,8 +39,8 @@
 		INSERT INTO law_info
 
 		values(
-		(SELECT CONCAT('L', '-', (SELECT LPAD(common_code ,4,'0') FROM register where common_id = #{common_id} ))),
-		(select common_code from REGISTER where common_id = #{common_id}),
+		(SELECT CONCAT('L', '-', (SELECT LPAD(common_code ,4,'0') FROM liferegister lr where common_id = common_id ))),
+		(select common_code from liferegister r where common_id = '#{common_id}'),
 		#{license}, 1);
 	</insert>
 	
@@ -51,9 +51,9 @@
 		saver_code, common_code, saver_license, saver_grade, saver_job, saver_job_addr
 		)
 		values(
-		(SELECT CONCAT('S', '-', (SELECT LPAD(common_code ,4,'0') FROM register where common_id = #{common_id} ))),
-		(select common_code from REGISTER where common_id = #{common_id}),
-		#{saver_license}, #{saver_grade}, #{saver_job}, #{saver_job_addr});
+		(select concat('S', '-', (select lpad(common_code ,4,'0') from liferegister lr where common_id = '${common_id}' ))),
+		(select common_code from liferegister lr where common_id = '${common_id}'),
+		${saver_license}, ${saver_grade}, ${saver_job}, ${saver_job_addr});
 	
 
 	</insert>

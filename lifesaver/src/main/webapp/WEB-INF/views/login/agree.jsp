@@ -17,19 +17,6 @@ html, body {
 	font-weight: bold;
 }
 
-
-.ccheck input[type="checkbox"] + label .chk_img {
-	padding:0 0 0 30px;
-	height:20px;
-	background:url("/post_inc/images/check01_off.png")no-repeat;
-	cursor:pointer;
-}
-.ccheck input[type="checkbox"]:checked + label .chk_img {
-	background:url("/post_inc/images/check01_on.png")no-repeat;
-}
-
-
-
 img {
 	max-width: 100%;
 	max-height: auto;
@@ -158,11 +145,23 @@ img {
 <script type="text/javascript">
 
 
-
-
+	function agree() {
+		var chkbox = document.getElementsByName('chk_agree');
+		var chk = false;
+		for (var i = 0; i < chkbox.length; i++) {
+			if (chkbox[i].checked) {
+				chk = true;
+			} else {
+				chk = false;
+			}
+		}
+		if (chk != true) {
+			alert("모든 약관에 동의해 주세요.");
+			location.href('/registerAgree');
+		}	
+		location.href('/registerSelect');
+	}
 </script>
-
-
 </head>
 <body>
 
@@ -193,31 +192,25 @@ img {
 		</div>
 			
 		<div id="checking">
-	
-		
-			<hr />
-				
-				<div id="agree1">
-				<img src=" <c:url value="/resources/img/agree/off.png"/>" alt="" onclick="changeImg()" id="on"/> 
+			<!-- <div id="agree1">
+				<input type="checkbox" name="" id="agreeall" /> 
 				<span id="agreeall">전체동의</span>
 				
-				</div>
-			<hr />
+				</div> -->
+		
 
 				<div id="agree2">
-				<img src=" <c:url value="/resources/img/agree/off.png"/>" alt="" onclick="changeImg2()" id="on2"/> 
-				<span id="agreeall">이용약관 동의 (필수)</span>
-				 
-				<img src="<c:url value="/resources/img/agree/agreebefore.png"/>" alt="" id="agreebutton"/>
-				
+					<input type="checkbox" name="chk_agree" id="chk1"><label for="box">이용 약관 동의 (필수)</label>
+	
+					<!-- 전문보기 -->
+					<img src="<c:url value="/resources/img/agree/agreebefore.png"/>" alt="" id="agreebutton"/>
 				</div>
 				
 				<div id="agree3">
-				<img src="<c:url value="/resources/img/agree/checkedDefault.png"/>" alt="" />
-				<span id="agreeall">개인정보 수집 및 이용동의 (필수)</span> 
-				
-				<img src="<c:url value="/resources/img/agree/agreebefore.png"/>" alt="" id="agreebutton"/>
-				
+					<input type="checkbox" name="chk_agree"><label for="box">개인정보 수집 및 이용 동의 (필수)</label>
+	
+					<!-- 전문보기 -->
+					<img src="<c:url value="/resources/img/agree/agreebefore.png"/>" alt="" id="agreebutton"/>
 				</div>
 			
 		</div>
@@ -234,7 +227,8 @@ img {
 		
 			<a href="<c:url value="/main" />"><img src="	<c:url value="/resources/img/agree/beforeBtnDefault.png"/>" id="beforebutton2" /></a>
 				
-			<a href="<c:url value="/registerSelect" />"><img src="<c:url value="/resources/img/agree/nextBtnClick.png"/>" id="nextbutton" /></a>	
+			<a href="<c:url value="/registerSelect" />"><img src="<c:url value="/resources/img/agree/nextBtnClick.png"/>"
+			 id="nextbutton" onclick="agree()"/></a>	
 		</div>
 		
 		

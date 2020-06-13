@@ -11,13 +11,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.co.lifesaver.domain.JoinVO;
-import kr.co.lifesaver.persistance.RegisterDAO;
+import kr.co.lifesaver.user.service.UserService;
+import kr.co.lifesaver.user.service.impl.UserDAO;
   
 @Controller
 public class NormalLoginController{
 	
 	@Inject
-	RegisterDAO dao;
+	UserDAO dao;
 
 	
 	@RequestMapping(value = "/normalLogin")

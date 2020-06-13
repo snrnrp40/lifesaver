@@ -1,4 +1,4 @@
-package kr.co.lifesaver.persistance;
+package kr.co.lifesaver.user.service.impl;
 
 import java.util.List;
 
@@ -8,15 +8,17 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 import kr.co.lifesaver.domain.JoinVO;
+import kr.co.lifesaver.user.service.UserService;
 
  
-@Repository
-public class JoinDAO implements RegisterDAO {
+@Repository("UserDAO")
+public class UserDAO implements UserService {
 
 	// DAO는 mybaits - sql문을 실행한 최종 결과물을 받아야 함 = sqlsession 필요
 	@Inject
 	SqlSession ss;
 
+	@Override
 	public void setSs(SqlSession ss) {
 		this.ss = ss;
 	}

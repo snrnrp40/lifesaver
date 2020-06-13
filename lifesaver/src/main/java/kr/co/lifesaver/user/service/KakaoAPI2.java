@@ -1,4 +1,4 @@
-package kr.co.lifesaver.service;
+package kr.co.lifesaver.user.service;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

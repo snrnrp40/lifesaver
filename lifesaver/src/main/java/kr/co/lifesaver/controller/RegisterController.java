@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.co.lifesaver.domain.JoinVO;
-import kr.co.lifesaver.persistance.RegisterDAO;
-import kr.co.lifesaver.service.KakaoAPI2;
+import kr.co.lifesaver.user.service.KakaoAPI2;
+import kr.co.lifesaver.user.service.UserService;
+import kr.co.lifesaver.user.service.impl.UserDAO;
+
   
 @Controller
 public class RegisterController {
@@ -24,10 +26,10 @@ public class RegisterController {
 	KakaoAPI2 kakao2 = new KakaoAPI2();
 	
 	@Inject
-	RegisterDAO dao;
+	UserDAO dao;
 	
 	
-	public void setDao(RegisterDAO dao) {
+	public void setDao(UserDAO dao) {
 		this.dao = dao;
 	}
 	

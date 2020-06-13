@@ -15,13 +15,13 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		
 		<!-- web -->
-		<!-- <property name="url" value="jdbc:mysql://sampledb.ccuqmybkkrrb.ap-northeast-2.rds.amazonaws.com:3306/sampleDB" />
+		 <property name="url" value="jdbc:mysql://sampledb.ccuqmybkkrrb.ap-northeast-2.rds.amazonaws.com:3306/sampleDB" />
 		<property name="username" value="root" />
-		<property name="password" value="lifesaver" /> -->
+		<property name="password" value="lifesaver" /> 
 		
-		<property name="url" value="jdbc:mysql://localhost:3306/goott7?useSSL=false" />
+	<!-- 	<property name="url" value="jdbc:mysql://localhost:3306/goott7?useSSL=false" />
 		<property name="username" value="scott" />
-		<property name="password" value="tiger" />
+		<property name="password" value="tiger" /> -->
 		
 		<property name="initialSize" value="3" />
 		<property name="maxTotal" value="60" />
