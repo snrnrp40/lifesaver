@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
@@ -69,13 +70,22 @@ public class MainController {
 		
 		
 		
-		return "redirect:/main";
+		return "main";
 		
 	}
 	
 	@RequestMapping(value = "/board")
 	public String boardIndex() {
-		return "board";
+		return "board/board";
+	}
+	
+	@RequestMapping(value = "/blog")
+	public String blogIndex() {
+		return "board/blog-single";
+	}
+	@RequestMapping(value = "/writeform", method = RequestMethod.GET)
+	public String writeformIndex() {
+		return "board/writeform";
 	}
 	
 	

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,19 +11,19 @@
   <meta content="" name="description">
  
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/hhwbootstrap.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwbootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/hhwfont-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/hhwanimate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/hhwionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/hhwowl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/hhwlightbox.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwfont-awesome.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwanimate.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwionicons.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwowl.carousel.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwlightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/hhwstyle.css" rel="stylesheet">
-  <link href="css/nav.css" rel="stylesheet">
-  <link href="css/hhwreadmore.css" rel="stylesheet">
+  <link href="/resources/css/hhwstyle.css" rel="stylesheet">
+  <link href="/resources/css/nav.css" rel="stylesheet">
+  <link href="/resources/css/hhwreadmore.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -32,23 +33,23 @@
     
 <div id="header-container">
 	<div id="header-login">
-		<div id="header-eng" class="header-ab"> <a href=""><img src="img/ENG.png" alt="" /></a></div>
-		<div id="header-reg" class="header-ab"> <a href=""><img src="img/register.png" alt="" /></a></div>
-		<div id="header-log" class="header-ab"> <a href=""><img src="img/login.png" alt="" /></a></div>
-		<div id="number"><a href=""><img src="img/080-8282-1253.png" alt="" /></a></div>
+		<div id="header-eng" class="header-ab"> <a href=""><img src="../resources/img/ENG.png" alt="" /></a></div>
+		<div id="header-reg" class="header-ab"> <a href=""><img src="../resources/img/register.png" alt="" /></a></div>
+		<div id="header-log" class="header-ab"> <a href=""><img src="../resources/img/login.png" alt="" /></a></div>
+		<div id="number"><a href=""><img src="../resources/img/080-8282-1253.png" alt="" /></a></div>
 	</div>
 	
 	<header id="nav-header">
-	   <a href=""><img src="img/logo.png" alt="" /></a>
+	   <a href=""><img src="../resources/img/logo.png" alt="" /></a>
 	  <nav>
 	  
-	    <a href=""> <img src="img/savernow.png" alt="" /></a>
-	    <a href=""> <img src="img/saverintro.png" alt="" /></a>
-	    <a href=""> <img src="img/huwon.png" alt="" /></a>
-	    <a href=""> <img src="img/emerinfo.png" alt="" /></a>
-	    <a href=""> <img src="img/issu.png" alt="" /></a>
-	    <a href=""> <img src="img/map.png" alt="" /></a>
-	    <a href=""> <img src="img/nanum.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/savernow.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/saverintro.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/huwon.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/emerinfo.png" alt="" /></a>
+	    <a href=""> <img src="../resources/img/issu.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/map.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/nanum.png" alt="" /></a>
 	   
 	  </nav>
 	</header>
@@ -78,13 +79,13 @@
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.jsp"><img src="img/biglogo.png" alt="" class="img-fluid"></a>
+              <a href="<c:url value="/blog"/>" ><img src="../resources/img/biglogo.png" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 
               </div>
-              <h3 class="card-title"><a href="blog-single.jsp">공지</a></h3>
+              <h3 class="card-title"><a href="<c:url value="/blog"/>" >공지</a></h3>
              	  <p>LifeSavor 6월 2일부터 정상 운영합니다
                          <span id="dots">...</span><br />
                          <span id="more">저희 LifeSaver가 6월 2일부터 정상 운영됩니다. <br />
@@ -103,7 +104,7 @@
                          
                   </p>
 					 <div class="read-more">
-						 <a href="blog-single.jsp" onclick="myFunction()" id="moreview">더보기..</a>
+						 <a href="<c:url value="/blog"/>"  onclick="myFunction()" id="moreview">더보기..</a>
                   		<a onclick="myFunction()" id="myBtn">Read More...</a>
                		 </div>
               
@@ -114,13 +115,13 @@
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.jsp"><img src="img/biglogo.png" alt="" class="img-fluid"></a>
+              <a href="<c:url value="/blog"/>" ><img src="../resources/img/biglogo.png" alt="" class="img-fluid"></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 
               </div>
-              <h3 class="card-title"><a href="blog-single.jsp">CPR (심폐소생술) 강사</a></h3>
+              <h3 class="card-title"><ahref="<c:url value="/blog"/>" >CPR (심폐소생술) 강사</a></h3>
               <p>안녕하세요. 심폐소생술 강사에 관심를 갖고 있는 고1 여고생입니다. <br /> 
                          <span id="dots2">...</span><br />
                          <span id="more2">인터넷에 CPR강사 조건이나 연봉등을 검색해봐도 잘 나오지 않아서요..ㅜㅜ <br />
@@ -150,7 +151,7 @@
                          
                   </p>
 					 <div class="read-more">
-						 <a href="blog-single.jsp" onclick="myFunction2()" id="moreview2">더보기..</a>
+						 <a href="<c:url value="/blog"/>"  onclick="myFunction2()" id="moreview2">더보기..</a>
                   		<a onclick="myFunction2()" id="myBtn2">Read More...</a>
                		 </div>
             </div>
@@ -160,13 +161,13 @@
         <div class="col-md-4">
           <div class="card card-blog">
             <div class="card-img">
-              <a href="blog-single.jsp"><img src="img/save.jpg" alt="" class="img-fluid" ></a>
+              <a href="blog-single.jsp"><img src="../resources/img/save.jpg" alt="" class="img-fluid" ></a>
             </div>
             <div class="card-body">
               <div class="card-category-box">
                 
               </div>
-              <h3 class="card-title"><a href="blog-single.jsp">cpr순서</a></h3>
+              <h3 class="card-title"><a href="<c:url value="/blog"/>" >cpr순서</a></h3>
                  <p>cpr순서에 대해 알려드립니다 <br />
                          <span id="dots3">...</span><br />
                          <span id="more3">1. 심정지 확인(반응 및 호흡 확인)하기
@@ -188,7 +189,7 @@
                          
                   </p>
 					 <div class="read-more">
-						 <a href="blog-single.jsp" onclick="myFunction3()" id="moreview3">더보기..</a>
+						 <a href="<c:url value="/blog"/>"  onclick="myFunction3()" id="moreview3">더보기..</a>
                   		<a onclick="myFunction3()" id="myBtn3">Read More...</a>
                		 </div>
             </div>
@@ -198,13 +199,13 @@
       </div>
     </div>
     <div class="board-more">
-    	 <a class="boardmore" href="blog-single.jsp" id="boardmore">게시판더보기</a>
+    	 <a class="boardmore" href="<c:url value="/blog"/>"  id="boardmore">게시판더보기</a>
     </div>
   </section>
   <!--/ Section Blog End /-->
 
   <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(../resources/img/overlay-bg.jpg)">
     <footer>
     <div id="agree">
 				<br />
@@ -217,7 +218,7 @@
 			
 			<div id="footer">
 				
-				<img src="img/footlogo.png" id="logo2" />
+				<img src="../resources/img/footlogo.png" id="logo2" />
 				Copyright  LifeSaver Corp.  All Right Reserved.
 			
 			</div>
@@ -229,22 +230,22 @@
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/hhwjquery.min.js"></script>
-  <script src="lib/jquery/hhwjquery-migrate.min.js"></script>
+  <script src="/resources/js/hhwjquery.min.js"></script>
+  <script src="/resources/js/hhwjquery-migrate.min.js"></script>
 
-  <script src="lib/bootstrap/js/hhwbootstrap.min.js"></script>
-  <script src="lib/easing/hhweasing.min.js"></script>
-  <script src="lib/counterup/hhwjquery.waypoints.min.js"></script>
-  <script src="lib/counterup/hhwjquery.counterup.js"></script>
-  <script src="lib/owlcarousel/hhwowl.carousel.min.js"></script>
+  <script src="/resources/js/hhwbootstrap.min.js"></script>
+  <script src="/resources/js/hhweasing.min.js"></script>
+  <script src="/resources/js/hhwjquery.waypoints.min.js"></script>
+  <script src="/resources/js/hhwjquery.counterup.js"></script>
+  <script src="/resources/js/hhwowl.carousel.min.js"></script>
 
-  <script src="lib/typed/hhwtyped.min.js"></script>
+  <script src="/resources/js/hhwtyped.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/hhwcontactform.js"></script>
+  <script src="/resources/js/hhwcontactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/hhwmain.js"></script>
-   <script src="js/hhwreadmore.js" type="text/javascript"></script>
+  <script src="/resources/js/hhwmain.js"></script>
+   <script src="/resources/js/hhwreadmore.js" type="text/javascript"></script>
 
 </body>
 </html>

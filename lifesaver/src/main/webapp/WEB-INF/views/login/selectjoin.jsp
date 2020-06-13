@@ -90,27 +90,6 @@ html, body {
 }
 </style>
 
-<script type="text/javascript">
-
-function changeImg() {
-	var on = document.getElementById('on');
-
-	if(on.src.indexOf('off') == -1) {
-	on.src = on.src.replace('on.png', 'off.png');
-	
-	// 로그인 유지 : 세션에 저장 
-	
-	
-	} else {
-	on.src = on.src.replace('off.png', 'on.png');
-	
-	// 로그인 유지 해제 : 세션에서 삭제
-	
-	}
-	}
-
-
-</script>
 
 
 </head>
@@ -125,11 +104,12 @@ function changeImg() {
 
 
 
+
 		<div id="selectjoin">
 			<br /><br /><br /><br /><br /><br /><br /><br /><br />
 			<img src="<c:url value="/resources/img/selectjoin/law.png" ></c:url>" id="law" />
 			
-			<a href="./registerSaver">
+			<a href="<c:url value="/registerSaver"></c:url>">
 			<img src="<c:url value="/resources/img/selectjoin/saver.png" ></c:url>" id="saver" />
 			</a>
 			
