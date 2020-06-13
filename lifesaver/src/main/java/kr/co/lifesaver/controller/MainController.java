@@ -78,6 +78,11 @@ public class MainController {
 		return "board";
 	}
 	
+	@RequestMapping(value = "/blog")
+	public String blogIndex() {
+		return "blog-single";
+	}
+	
 	
 	
 	

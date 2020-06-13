@@ -10,19 +10,19 @@
   <meta content="" name="description">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/hhwbootstrap.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwbootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/hhwfont-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/hhwanimate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/hhwionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/hhwowl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/hhwlightbox.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwfont-awesome.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwanimate.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwionicons.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwowl.carousel.min.css" rel="stylesheet">
+  <link href="/resources/css/hhwlightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/hhwstyle.css" rel="stylesheet">
-  <link href="css/nav.css" rel="stylesheet">
-  <link href="css/hhwreadmore2.css" rel="stylesheet">
+  <link href="/resources/css/hhwstyle.css" rel="stylesheet">
+  <link href="/resources/css/nav.css" rel="stylesheet">
+  <link href="/resources/css/hhwreadmore2.css" rel="stylesheet">
   
 </head>
 
@@ -31,23 +31,23 @@
  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">   
 <div id="header-container">
 	<div id="header-login">
-		<div id="header-eng" class="header-ab"> <a href=""><img src="img/ENG.png" alt="" /></a></div>
-		<div id="header-reg" class="header-ab"> <a href=""><img src="img/register.png" alt="" /></a></div>
-		<div id="header-log" class="header-ab"> <a href=""><img src="img/login.png" alt="" /></a></div>
-		<div id="number"><a href=""><img src="img/080-8282-1253.png" alt="" /></a></div>
+		<div id="header-eng" class="header-ab"> <a href=""><img src="/resources/img/ENG.png" alt="" /></a></div>
+		<div id="header-reg" class="header-ab"> <a href=""><img src="/resources/img/register.png" alt="" /></a></div>
+		<div id="header-log" class="header-ab"> <a href=""><img src="/resources/img/login.png" alt="" /></a></div>
+		<div id="number"><a href=""><img src="/resources/img/080-8282-1253.png" alt="" /></a></div>
 	</div>
 	
 	<header id="nav-header">
-	   <a href=""><img src="img/logo.png" alt="" /></a>
+	   <a href=""><img src="/resources/img/logo.png" alt="" /></a>
 	  <nav>
 	  
-	    <a href=""> <img src="img/savernow.png" alt="" /></a>
-	    <a href=""> <img src="img/saverintro.png" alt="" /></a>
-	    <a href=""> <img src="img/huwon.png" alt="" /></a>
-	    <a href=""> <img src="img/emerinfo.png" alt="" /></a>
-	    <a href=""> <img src="img/issu.png" alt="" /></a>
-	    <a href=""> <img src="img/map.png" alt="" /></a>
-	    <a href="index.jsp"> <img src="img/nanum.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/savernow.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/saverintro.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/huwon.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/emerinfo.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/issu.png" alt="" /></a>
+	    <a href=""> <img src="/resources/img/map.png" alt="" /></a>
+	    <a href="index.jsp"> <img src="/resources/img/nanum.png" alt="" /></a>
 	   
 	  </nav>
 	</header>
@@ -109,7 +109,7 @@
         
          <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -159,7 +159,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -196,7 +196,7 @@
           
           <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -246,7 +246,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -281,7 +281,7 @@
           </div>
                <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -331,7 +331,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -429,7 +429,7 @@
         
          <div class="post-box">
             <div class="post-thumb">
-              <img src="img/save.jpg" class="img-fluid" alt="">
+              <img src="/resources/img/save.jpg" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">정보</h1>
@@ -480,7 +480,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -517,7 +517,7 @@
           
           <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -567,7 +567,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -602,7 +602,7 @@
           </div>
                <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -652,7 +652,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -750,7 +750,7 @@
         
          <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">질문</h1>
@@ -800,7 +800,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -837,7 +837,7 @@
           
           <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -887,7 +887,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -922,7 +922,7 @@
           </div>
                <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -972,7 +972,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -1071,7 +1071,7 @@
         
          <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">아무거나</h1>
@@ -1121,7 +1121,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -1158,7 +1158,7 @@
           
           <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -1208,7 +1208,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -1243,7 +1243,7 @@
           </div>
                <div class="post-box">
             <div class="post-thumb">
-              <img src="img/biglogo.png" class="img-fluid" alt="">
+              <img src="/resources/img/biglogo.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
               <h1 class="article-title">공지</h1>
@@ -1293,7 +1293,7 @@
             <ul class="list-comments">
               <li>
                 <div class="comment-avatar">
-                  <img src="img/unnamed.jpg" alt="">
+                  <img src="/resources/img/unnamed.jpg" alt="">
                 </div>
                 <div class="comment-details">
                   <h4 class="comment-author">작성자</h4>
@@ -1399,7 +1399,7 @@
 			
 			<div id="footer">
 				
-				<img src="img/footlogo.png" id="logo2" />
+				<img src="/resources/img/footlogo.png" id="logo2" />
 				Copyright  LifeSaver Corp.  All Right Reserved.
 			
 			</div>
@@ -1411,18 +1411,18 @@
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/hhwjquery.min.js"></script>
-  <script src="lib/jquery/hhwjquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/hhwbootstrap.min.js"></script>
-  <script src="lib/easing/hhweasing.min.js"></script>
-  <script src="lib/typed/hhwtyped.min.js"></script>
+  <script src="/resources/js/hhwjquery.min.js"></script>
+  <script src="/resources/js/hhwjquery-migrate.min.js"></script>
+  <script src="/resources/js/hhwbootstrap.min.js"></script>
+  <script src="/resources/js/hhweasing.min.js"></script>
+  <script src="/resources/js/hhwtyped.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/hhwcontactform.js"></script>
+  <script src="/resources/js/hhwcontactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/hhwmain.js"></script>
-  <script src="js/hhwreadmore2.js" type="text/javascript"></script>
-  <script src="js/hhwmenu.js" type="text/javascript"></script>
+  <script src="/resources/js/hhwmain.js"></script>
+  <script src="/resources/js/hhwreadmore2.js" type="text/javascript"></script>
+  <script src="/resources/js/hhwmenu.js" type="text/javascript"></script>
 
 </body>
 </html>
