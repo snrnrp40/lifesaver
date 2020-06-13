@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import kr.co.lifesaver.domain.JoinVO;
 import kr.co.lifesaver.persistance.RegisterDAO;
 import kr.co.lifesaver.service.KakaoAPI2;
-
+  
 @Controller
 public class RegisterController {
 	

@@ -16,7 +16,7 @@ html, body {
 	font-weight: bold;
 	font-size: 10.5px;
 }
-
+ 
 img {
 	max-width: 100%;
 	max-height: auto;

@@ -17,6 +17,19 @@ html, body {
 	font-weight: bold;
 }
 
+
+.ccheck input[type="checkbox"] + label .chk_img {
+	padding:0 0 0 30px;
+	height:20px;
+	background:url("/post_inc/images/check01_off.png")no-repeat;
+	cursor:pointer;
+}
+.ccheck input[type="checkbox"]:checked + label .chk_img {
+	background:url("/post_inc/images/check01_on.png")no-repeat;
+}
+
+
+
 img {
 	max-width: 100%;
 	max-height: auto;
@@ -144,39 +157,7 @@ img {
 
 <script type="text/javascript">
 
-function changeImg() {
-	var on = document.getElementById('on');
 
-	if(on.src.indexOf('off') == -1) {
-	on.src = on.src.replace('on.png', 'off.png');
-	
-	// 로그인 유지 : 세션에 저장 
-	
-	
-	} else {
-	on.src = on.src.replace('off.png', 'on.png');
-	
-	// 로그인 유지 해제 : 세션에서 삭제
-	
-	}
-}
-
-function changeImg2() {
-	var on = document.getElementById('on2');
-
-	if(on.src.indexOf('off') == -1) {
-	on.src = on.src.replace('on.png', 'off.png');
-	
-	// 로그인 유지 : 세션에 저장 
-	
-	
-	} else {
-	on.src = on.src.replace('off.png', 'on.png');
-	
-	// 로그인 유지 해제 : 세션에서 삭제
-	
-	}
-}
 
 
 </script>

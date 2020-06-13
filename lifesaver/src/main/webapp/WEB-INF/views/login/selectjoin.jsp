@@ -16,7 +16,7 @@ html, body {
 	font-weight: bold;
 	font-size: 10.5px;
 }
-
+ 
 
 #container { 
 	width: 600px;

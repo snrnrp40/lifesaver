@@ -3,7 +3,7 @@ package kr.co.lifesaver.persistance;
 import java.util.List;
 
 import kr.co.lifesaver.domain.JoinVO;
-
+ 
 
 public interface RegisterDAO {
 	

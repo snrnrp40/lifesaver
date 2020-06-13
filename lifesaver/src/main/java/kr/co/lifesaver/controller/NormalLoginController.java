@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.co.lifesaver.domain.JoinVO;
 import kr.co.lifesaver.persistance.RegisterDAO;
-
+  
 @Controller
 public class NormalLoginController{
 	

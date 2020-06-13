@@ -302,7 +302,8 @@ $(document).ready(function(){
 					<div id="gender_text" class="texts">
 						<input type="checkbox" id="cb1" name="checkgender" value="남">
   						<label for="cb1">남</label>
-  						<input type="checkbox" id="cb2" name="checkgender" value="여">
+  						<input type="checkbox" 
+  						id="cb2" name="checkgender" value="여">
   						<label for="cb2">여</label>
 					</div>
 				</div>

@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class JoinVO {
 
-	// 기본 작성
+	// 기본 작성 
 	private String common_code;
 	private String common_id;
 	private String common_pw;

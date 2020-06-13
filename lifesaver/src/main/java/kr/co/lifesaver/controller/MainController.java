@@ -11,13 +11,16 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
 	
 	httpConnection conn = httpConnection.getInstance();
 
-	@RequestMapping(value = "/main")
+	
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String mainIndex() {
 		return "main";
 	}
