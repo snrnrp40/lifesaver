@@ -17,10 +17,10 @@
     <title>Life Saver</title>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <link rel="shortcut icon" href="<c:out value="/resources/img/images/ico/favicon.png" />">
+    <link rel="shortcut icon" href="../resources/img/images/ico/favicon.png">
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="<c:out value="/resources/css/lifeSaver.css" />" type="text/css" />
+    <link rel="stylesheet" href="../resources/css/lifeSaver.css" type="text/css" />
 
     <!-- GOOGLE WEB FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -65,6 +65,7 @@ function kout(){
 	Kakao.init('62a01cd8367a4cda69419da6793187ca');//카카오에서 제공 myceo.co.kr 수정
 	Kakao.Auth.logout();
 	setCookie("kakao_login","",-1);  // 쿠키삭제 (로그아웃)
+	location.href = './main';
 	
 	
 }
@@ -97,9 +98,8 @@ function kout(){
                     
                     <c:if test="${id ne null }">
                     
-                  
                
-                    <li><a href="<c:url value="/logout"/>" onclick="kout()">로그아웃</a></li>
+                    <li><a href="/logout" onclick="kout()">로그아웃</a></li>
                     
                     </c:if>
                     
@@ -107,7 +107,7 @@ function kout(){
                         <img src="/resources/img/sideBar.png" alt=""> 
                     </li>
                     
-                    <li><a href="<c:url value="/registerAgree"/>">회원가입</a></li>
+                    <li><a href="/registerAgree">회원가입</a></li>
                     <li>
                         <img src="../resources/img/sideBar.png" alt="">
                     </li>

@@ -176,9 +176,9 @@ $(document).ready(function(){
 	    	return false;
 	    }
 
-	/* 	document.frm.action = './saverjoinOK';
+		document.frm.action = './saverjoinOK';
 		document.frm.method = "GET"; 
-		document.frm.submit(); */
+		document.frm.submit();
 		alert("회원가입이 완료되었습니다.");
 	
 	
@@ -191,9 +191,7 @@ $(document).ready(function(){
 </head>
 <body>
 
-
-
-<form action="<c:url value="/saverjoinOK"/>" name="frm">
+<form action="./saverjoinOK" name="frm">
 
 	<div id="container">
 
@@ -212,7 +210,7 @@ $(document).ready(function(){
 			<div id="authtext">SNS 인증하기</div>
 			
 			<div id="auth">
-			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://13.209.132.37:8080/lifesaver/registerAuth&response_type=code&scope=account_email">
+			<a href="https://kauth.kakao.com/oauth/authorize?client_id=5461997da2e1069ba99ac732d8c5018c&redirect_uri=http://13.209.132.37/lifesaver/registerAuth&response_type=code&scope=account_email">
 				<img src="<c:url value="/resources/img/saverjoin/kakaoBtn.png" ></c:url>" alt="" /> 
 			</a>
 				<img src="<c:url value="/resources/img/saverjoin/googleBtn.png" ></c:url>" alt="" />
@@ -355,7 +353,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 				
-				<input type="submit" value="확인" id="okbutton" />
+				<input type="button" value="확인" id="okbutton" />
 				<input type="button" value="이전" />
 				
 				</div> <!-- insert 종료 -->
